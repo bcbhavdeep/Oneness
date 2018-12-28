@@ -1,0 +1,7 @@
+<div id="messages">
+<% for(var type in messages){ %>
+<% messages[type].forEach(function (message) {%>
+<div class="alert alert-<%= type %>"><%= message %></div>
+<% }) %>
+<% } %>
+</div>
